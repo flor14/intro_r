@@ -31,54 +31,67 @@ library(knitr)
 <br><br><br><br><br> Slides disponibles en <https://bit.ly/curso-r-fca> `r emo::ji("sparkles")`
 <br> Página web del curso en <https://curso-r-fca.netlify.com> `r emo::ji("star2")`
 
-
----
-
-# Exploración de datos
-
-```{r visu, echo=FALSE, fig.align = "center"}
-knitr::include_graphics("visualizar.png")
-```
-
-.footnote[**Fuente**: https://es.r4ds.hadley.nz/explorar-introduccion.html]
 ---
 
 class: center, middle
 
-# Configuracion
+# Nota
+
+Las filminas del primer dia de clase se basan en el curso que se dio en 2019 en la JAIIO
+https://flor14.github.io/r_cai_2019/
+
+---
+
+class: center, middle
+
+# Configuración
 
 ```{r on, echo=FALSE, out.width = "600px", fig.align = "center"}
 knitr::include_graphics("1_modoon.png")
 ```
 
-
----
-
-# Licencia
-
-
-
 ---
 
 # Obteniendo Datos
 
-
 **Campo**
+
 Obtención de datos a campo – Planillas
 _Ej: Planilla con valores de presencia – ausencia de especies_
 
 
 **Laboratorio**
-Procesamiento de muestras de experimentos – Mediciones
+
+Procesamiento de muestras de experimentos. Mediciones. 
 _Ej: Planilla con valores de mediciones enzimáticas._
 
 
 **Bases de datos**
+
 Trabajo sobre datos ya obtenidos
 _Ej: Datos de estaciones meteorológicas._
 
+
+```{r muestra, echo=FALSE, out.width = "300px", fig.align = "center"}
+knitr::include_graphics("toma_muestra.jpg")
+```
+
 ---
 
+
+background-image: url(cajanegra.png)
+background-size: contain
+---
+class: center, middle
+
+# Ciencia de Datos
+
+```{r cajanegra2, echo=FALSE, out.width = "800px", fig.align = "center"}
+knitr::include_graphics("cajanegra2.png")
+```
+
+.footnote[**Fuente**: https://es.r4ds.hadley.nz/explorar-introduccion.html]
+---
 
 class: center, middle, inverse
 
@@ -126,23 +139,23 @@ knitr::include_graphics("3_graf.png")
 ---
 
 class: center, middle, inverse
-# La programación nos permite *automatizar* tareas
+# La programación nos permite <span style="color:blue">automatizar</span> tareas
 
 ---
 
 class: center, middle, inverse
-## Nos permite manejar bases de datos más grandes
+## Nos permite manejar <span style="color:blue">bases de datos más grandes</span>. 
 
-## Los paquetes permiten explorar varias funcionalidades de forma relativamente sencilla
+## Los <span style="color:blue">paquetes</span> permiten explorar varias funcionalidades de forma relativamente sencilla.
 
 ---
 
 class: center, middle, inverse
 
-## Múltiples formas de comunicar resultados: 
-#### con R podes crear reportes en distintos formatos, paginas web, mapas, gráficos, libros, posters, presentaciones, etc..
+## <span style="color:blue">Múltiples formas de comunicar resultados</span>: 
+### con R podes crear reportes en distintos formatos, paginas web, mapas, gráficos, libros, posters, presentaciones, etc...
 
-## Es software libre
+## Es software <span style="color:blue">libre</span> 🕊️
 
 ---
 class: center, middle
@@ -163,17 +176,26 @@ class: center, middle
 background-size: contain
 background-image: url(7_r.png)
 
----
-class: center, middle, inverse
-R y RStudio
+
+
+.footnote[https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2018.01169.x]
 
 ---
+
+class: center, middle, inverse
+
+# R y RStudio IDE
+
+---
+class: center, middle
 
 ```{r 8_r, echo=FALSE, out.width = "900px", fig.align = "center"}
 knitr::include_graphics("8_r.png")
 ```
 
 ---
+
+class: center, middle
 
 En nuestra máquina, se presentan dos íconos
 
@@ -184,6 +206,7 @@ knitr::include_graphics("9_r.png")
 
 ---
 
+class: center, middle
 
 Para instalar R y R-Studio pueden usar el link que esta en la página del curso.
 
@@ -197,33 +220,27 @@ knitr::include_graphics("10_r.png")
 
 ---
 class: center, middle, inverse
-# RStudio IDE
 
 
----
-
-```{r 12_rstudio2, echo=FALSE, out.width = "800px", fig.align = "center"}
-
-knitr::include_graphics("12_rstusio2.png")
-
-```
-
+# R y <span style="color:blue">RStudio IDE</span>
 
 ---
 
-```{r 13_rstudio, echo=FALSE, out.width = "800px", fig.align = "center"}
+background-image: url(13_rstudio.png)
+background-size: contain
 
-knitr::include_graphics("13_rstudio.png")
+---
 
-```
+background-image: url(13_rstudio.png)
+background-size: contain
 
 ---
 class: center, middle, inverse
-# Paquetes
+# Paquetes 📦
 
 ---
 
-# Paquetes
+# Paquetes 📦
 
 ```{r 14_paq, echo=FALSE, out.width = "800px", fig.align = "center"}
 
@@ -267,25 +284,23 @@ knitr::include_graphics("16_lib.png")
 
 ---
 
-```{r 17_paq, echo=FALSE, out.width = "800px", fig.align = "center"}
+background-image: url("17_paq.png")
+background-size: contain
 
-knitr::include_graphics("17_paq.png")
-
-```
 
 ---
 
-```{r 18_vigne, echo=FALSE, out.width = "800px", fig.align = "center"}
+background-image: url(18_vigne.png)
+background-size: contain
 
-knitr::include_graphics("18_vigne")
-
-```
 
 ---
+
+# Repositorios ☁️
 
 ```{r 19_repo, echo=FALSE, out.width = "800px", fig.align = "center"}
 
-knitr::include_graphics("19_repo")
+knitr::include_graphics("19_repo.png")
 
 ```
 
@@ -308,29 +323,40 @@ background-image: url(22_pro.png)
 background-size: contain
 
 ---
+
 class: center, middle, inverse
 
-# DEMO 1
+# DEMO 1 🙌💻
 
  Diferencia entre R y RStudio
+ 
  Abrir un proyecto de trabajo 
+ 
  Instalar y llamar un paquete en R
 
 ---
 
 # Mensajes en R
 
-### Errores:
-Aparecerá  “Error in…” y tratará de explicar qué fue lo que salió mal. 
-Generalmente cuando hay un error, el código no se ejecutará. 
+### <span style="color:red">Errores</span> 
+  Aparecerá  “Error in…” y tratará de explicar qué fue lo que salió mal. 
+  Generalmente cuando hay un error, el código no se ejecutará. 
 
-### Advertencias:
-Aparecerá  "Warning" y tratará de explicar por qué hay una advertencia.
-En general, el código seguirá funcionando, pero hay algo a revisar o estar atentos. 
+### <span style="color:yellow">Advertencias</span>
+  Aparecerá <span style="color:red">"Warning"</span> y tratará de explicar por qué hay una advertencia.
+  En general, el código seguirá funcionando, pero hay algo a revisar o estar atentos. 
 
-### Mensajes: 
-Cuando el texto en rojo no comienza con "Error in" o «Warning mensaje amistoso. 
-Son mensajes de diagnóstico útiles y no impiden que el código funcione.
+### <span style="color:green">Mensajes</span>
+  Cuando el texto en rojo no comienza con "Error in" o «Warning mensaje amistoso. 
+  Son mensajes de diagnóstico útiles y no impiden que el código funcione.
+
+
+```{r semaforo, echo=FALSE, out.width = "300px", fig.align = "center"}
+
+knitr::include_graphics("semaforo.jpg")
+
+```
+
 
 ---
 
@@ -354,6 +380,7 @@ background-size: contain
 
 ---
 
+class: center, middle
 
 ```{r 28_tw, echo=FALSE, out.width = "800px", fig.align = "center"}
 
@@ -363,9 +390,47 @@ knitr::include_graphics("28_twitter.png")
 
 ---
 
-# Avanza muy rapido
+class: center, middle
 
-```{r 29, echo=FALSE, out.width = "300px", fig.align = "center"}
+# Comunidades
+
+.pull-left[
+
+### R-Ladies
+
+```{r rladies, echo=FALSE, out.width = "200px", fig.align = "center"}
+
+knitr::include_graphics("rladiesrcia.jpg")
+
+```
+
+[Twitter](https://twitter.com/rladies_rciacte?lang=es)
+
+]
+
+.pull-right[
+
+### R en el NEA
+
+```{r renelnea, echo=FALSE, out.width = "200px", fig.align = "center"}
+
+knitr::include_graphics("renelnea.png")
+
+```
+
+[Twitter](https://twitter.com/NeaRenel)
+
+]
+
+
+
+---
+
+class: center, middle
+
+# Avanza muy rápido 📈
+
+```{r 29, echo=FALSE, out.width = "400px", fig.align = "center"}
 
 knitr::include_graphics("cran.png")
 
@@ -373,9 +438,11 @@ knitr::include_graphics("cran.png")
 
 ---
 
-# La comunidad de R es twittera
+class: center, middle
 
-```{r 30, echo=FALSE, out.width = "300px", fig.align = "center"}
+# La comunidad de R es twittera 🐦
+
+```{r 30, echo=FALSE, out.width = "400px", fig.align = "center"}
 
 knitr::include_graphics("twit.png")
 
@@ -385,7 +452,8 @@ knitr::include_graphics("twit.png")
 
 class: center, middle, inverse
 
-# Tidyverse
+<img src="tidyverse.png" width="40%" align="middle" />
+# Tidyverse 🌌
 
 ---
 
@@ -433,28 +501,50 @@ background-size: contain
 background-image: url(37_ti.png)
 background-size: contain
 
+# Tidyverse 🌌
+
+<img src="tidyverse.png" width="10%" align="right" />
+
 ---
+
 
 background-image: url(38_ti.png)
 background-size: contain
 
+<img src="tidyverse.png" width="10%" align="right" />
+
+# Tidyverse 🌌
+---
+<img src="tidyverse.png" width="10%" align="right" />
+
+# Tidyverse 🌌
+
+Las funciones de los paquetes del Tidyverse y los de R base pueden coincidir
+
+```{r 39ti, echo=FALSE, out.width = "500px", fig.align = "center"}
+
+knitr::include_graphics("39_ti.png")
+
+```
+
+
 ---
 
-background-image: url(39_ti.png)
-background-size: contain
+class: center, middle, inverse
 
-Tidyverse y R base pueden coincidir / falta slide de roxy
----
-
-
-# Los paquetes del tidyverse se escriben diferente, tienen una **sintaxis** particular
+# Los paquetes del tidyverse se escriben diferente, tienen una <span style="color:blue">sintaxis</span> particular
 
 ---
+
+
 
 background-image: url(40_synt.png)
 background-size: contain
 
+<img src="tidyverse.png" width="10%" align="right" />
+
 ---
+
 
 background-image: url(41_pipes.png)
 background-size: contain
@@ -471,7 +561,7 @@ background-size: contain
 
 ---
 class: center, middle, inverse
-# Importar datos
+# Importar datos 
 
 ---
 
@@ -510,7 +600,9 @@ knitr::include_graphics("47_df.png")
 
 ---
 
-# Importar archivos desde Excel
+class: center, middle
+
+# Importar archivos desde Excel 📎
 
 ```{r 48, echo=FALSE, out.width = "600px", fig.align = "center"}
 
@@ -520,7 +612,9 @@ knitr::include_graphics("48_readr.png")
 
 ---
 
-# Otros paquetes
+class: center, middle
+
+# Otros paquetes 📦
 
 ```{r 49, echo=FALSE, out.width = "600px", fig.align = "center"}
 
@@ -533,16 +627,32 @@ knitr::include_graphics("49_dt.png")
 
 class: center, middle, inverse
 
-# DEMO 2
+# DEMO 2 🙌💻
 
- Escritura Paquete::funcion()
+ Escritura `Paquete::funcion()`
+ 
  Importar una base de datos
+ 
  Escribir con pipes
 
 
 ---
 
 # `r emo::ji("raising_hand")` ¿Preguntas?
+
+
+---
+
+class:  inverse
+
+
+# Práctica 🙌
+
+- Generen la carpeta donde van a realizar las actividades del curso
+- Inicien un proyecto dentro del dataset
+- Instalar tidyverse, datos, tidymodels, gapminder, ggally
+- Importar un dataset de excel
+- Pipes
 
 
 
