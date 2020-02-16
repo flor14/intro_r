@@ -28,8 +28,8 @@ library(knitr)
 .large[Florencia D'Andrea | INTA-CONICET | <a href="http://twitter.com/cantoflor_87"> `r fa("twitter", fill = 'steelblue')` @cantoflor_87</a><br>] 
 
 
-<br><br><br><br><br> Slides disponibles en <https://bit.ly/curso-r-fca> `r emo::ji("sparkles")`
-<br> Página web del curso en <https://curso-r-fca.netlify.com> `r emo::ji("star2")`
+<br><br><br><br><br> Slides disponibles en <https://flor14.github.io/intro_r/intro_r.html#1> `r emo::ji("sparkles")`
+<br> Página web del curso en <https://flor14.github.io/Curso_r_unne_2020/> `r emo::ji("star2")`
 
 ---
 
@@ -181,6 +181,15 @@ background-image: url(7_r.png)
 
 .footnote[https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2018.01169.x]
 
+
+---
+
+
+```{r 111_r, echo=FALSE, out.width = "900px", fig.align = "center"}
+knitr::include_graphics("importar.png")
+```
+
+
 ---
 
 class: center, middle, inverse
@@ -227,7 +236,7 @@ class: center, middle, inverse
 
 ---
 
-background-image: url(13_rstudio.png)
+background-image: url(12_rstusio2.png)
 background-size: contain
 
 ---
@@ -300,6 +309,13 @@ knitr::include_graphics("19_repo.png")
 ```{r 20_dede, echo=FALSE, out.width = "800px", fig.align = "center"}
 knitr::include_graphics("20_dede.png")
 ```
+
+
+---
+
+class: center, middle, inverse
+
+# Uso de Proyectos
 
 ---
 
@@ -522,6 +538,14 @@ background-size: contain
 background-image: url(42_pipes.png)
 background-size: contain
 
+
+---
+
+class: center, middle
+
+##  `f(x,y)`  seria idéntico a escribir
+## `x %>% f(y)`
+
 ---
 
 background-image: url(43_entonces.png)
@@ -538,11 +562,21 @@ background-size: contain
 
 ---
 
+```{r 999, echo=FALSE, out.width = "800px", fig.align = "center"}
+knitr::include_graphics("importar.png")
+```
+
+---
+
 # Vector
 
 ```{r 45, echo=FALSE, out.width = "800px", fig.align = "center"}
 knitr::include_graphics("45_vector.png")
 ```
+
+.footnote[*Analogía de Jenny Bryan* - https://speakerdeck.com/jennybc/data-rectangling
+*Software Carpentry* - http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html
+]
 
 ---
 
@@ -552,9 +586,8 @@ knitr::include_graphics("45_vector.png")
 knitr::include_graphics("46_df.png")
 ```
 
-.footnote[*Analogía de Jenny Bryan* - https://speakerdeck.com/jennybc/data-rectangling]
-
-.footnote[http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html
+.footnote[*Analogía de Jenny Bryan* - https://speakerdeck.com/jennybc/data-rectangling
+*Software Carpentry* - http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html
 ]
 
 
@@ -566,8 +599,14 @@ knitr::include_graphics("46_df.png")
 knitr::include_graphics("47_df.png")
 ```
 
+.footnote[*Analogía de Jenny Bryan* - https://speakerdeck.com/jennybc/data-rectangling
+*Software Carpentry* - http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html
+]
+
+---
 
 class: center, middle
+
 
 # Importar archivos desde Excel 📎
 
@@ -603,8 +642,6 @@ class: center, middle, inverse
 
 # DEMO 2 🙌💻
 
- Escritura `Paquete::funcion()`
- 
  Importar una base de datos
  
  Escribir con pipes
@@ -624,10 +661,49 @@ class:  inverse
 
 # Práctica 🙌
 
-- Generen la carpeta donde van a realizar las actividades del curso
-- Inicien un proyecto dentro del dataset
-- Instalar `tidyverse`, `datos`, `tidymodels`, `gapminder`, `ggally`
+- Inicien un proyecto dónde van a realizar las actividades del curso
+- Instalar `tidyverse`, `datos`, `tidymodels`, `GGally`, `gapminder`, `mlbench`
+- Observar que hay dentro de un paquete usando  `::`
 - Importar un dataset desde excel
 - Pipes
 
+---
+
+class:  inverse
+
+# Práctica 🙌
+
+## ¿Cómo escribirían este código con pipes?
+
+El dataset inicial se llama `babynames`
+
+```{r montoto, eval=FALSE}
+
+# primer caso
+babynames <- filter(babynames, year == 2015, sex == "M")
+babynames <- select(babynames, name, n)
+babynames <- arrange(babynames, desc(n))
+babynames
+
+# segundo caso
+boys_2015 <- filter(babynames, year == 2015, sex == "M")
+boys_2015 <- select(boys_2015, name, n)
+boys_2015 <- arrange(boys_2015, desc(n))
+boys_2015
+
+```
+
+---
+
+class:  inverse
+
+# Práctica 🙌
+## Rta
+
+```{r montata, eval=FALSE}
+babynames %>% 
+  filter(year == 2015, sex == "M") %>% 
+  select(name, n) %>% 
+  arrange(desc(n))
+```
 

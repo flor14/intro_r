@@ -24,8 +24,8 @@ class: inverse, center
 .large[Florencia D'Andrea | INTA-CONICET | &lt;a href="http://twitter.com/cantoflor_87"&gt; &lt;svg style="height:0.8em;top:.04em;position:relative;fill:steelblue;" viewBox="0 0 512 512"&gt;&lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/&gt;&lt;/svg&gt; @cantoflor_87&lt;/a&gt;&lt;br&gt;] 
 
 
-&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt; Slides disponibles en &lt;https://bit.ly/curso-r-fca&gt; ✨
-&lt;br&gt; Página web del curso en &lt;https://curso-r-fca.netlify.com&gt; 🌟
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt; Slides disponibles en &lt;https://flor14.github.io/intro_r/intro_r.html#1&gt; ✨
+&lt;br&gt; Página web del curso en &lt;https://flor14.github.io/Curso_r_unne_2020/&gt; 🌟
 
 ---
 
@@ -163,6 +163,13 @@ background-image: url(7_r.png)
 
 .footnote[https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2018.01169.x]
 
+
+---
+
+
+&lt;img src="importar.png" width="900px" style="display: block; margin: auto;" /&gt;
+
+
 ---
 
 class: center, middle, inverse
@@ -203,7 +210,7 @@ class: center, middle, inverse
 
 ---
 
-background-image: url(13_rstudio.png)
+background-image: url(12_rstusio2.png)
 background-size: contain
 
 ---
@@ -264,6 +271,13 @@ background-size: contain
 ---
 
 &lt;img src="20_dede.png" width="800px" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+class: center, middle, inverse
+
+# Uso de Proyectos
 
 ---
 
@@ -472,6 +486,14 @@ background-size: contain
 background-image: url(42_pipes.png)
 background-size: contain
 
+
+---
+
+class: center, middle, inverse
+
+##  `f(x,y)`  seria idéntico a escribir
+## `x %&gt;% f(y)`
+
 ---
 
 background-image: url(43_entonces.png)
@@ -488,9 +510,17 @@ background-size: contain
 
 ---
 
+&lt;img src="importar.png" width="800px" style="display: block; margin: auto;" /&gt;
+
+---
+
 # Vector
 
 &lt;img src="45_vector.png" width="800px" style="display: block; margin: auto;" /&gt;
+
+.footnote[*Analogía de Jenny Bryan* - https://speakerdeck.com/jennybc/data-rectangling
+*Software Carpentry* - http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html
+]
 
 ---
 
@@ -498,9 +528,8 @@ background-size: contain
 
 &lt;img src="46_df.png" width="800px" style="display: block; margin: auto;" /&gt;
 
-.footnote[*Analogía de Jenny Bryan* - https://speakerdeck.com/jennybc/data-rectangling]
-
-.footnote[http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html
+.footnote[*Analogía de Jenny Bryan* - https://speakerdeck.com/jennybc/data-rectangling
+*Software Carpentry* - http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html
 ]
 
 
@@ -510,8 +539,14 @@ background-size: contain
 
 &lt;img src="47_df.png" width="800px" style="display: block; margin: auto;" /&gt;
 
+.footnote[*Analogía de Jenny Bryan* - https://speakerdeck.com/jennybc/data-rectangling
+*Software Carpentry* - http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html
+]
+
+---
 
 class: center, middle
+
 
 # Importar archivos desde Excel 📎
 
@@ -541,8 +576,6 @@ class: center, middle, inverse
 
 # DEMO 2 🙌💻
 
- Escritura `Paquete::funcion()`
- 
  Importar una base de datos
  
  Escribir con pipes
@@ -562,11 +595,51 @@ class:  inverse
 
 # Práctica 🙌
 
-- Generen la carpeta donde van a realizar las actividades del curso
-- Inicien un proyecto dentro del dataset
-- Instalar `tidyverse`, `datos`, `tidymodels`, `gapminder`, `ggally`
+- Inicien un proyecto dónde van a realizar las actividades del curso
+- Instalar `tidyverse`, `datos`, `tidymodels`, `GGally`, `gapminder`, `mlbench`
+- Observar que hay dentro de un paquete usando  `::`
 - Importar un dataset desde excel
 - Pipes
+
+---
+
+class:  inverse
+
+# Práctica 🙌
+
+## ¿Cómo escribirían este código con pipes?
+
+El dataset inicial se llama `babynames`
+
+
+```r
+# primer caso
+babynames &lt;- filter(babynames, year == 2015, sex == "M")
+babynames &lt;- select(babynames, name, n)
+babynames &lt;- arrange(babynames, desc(n))
+babynames
+
+# segundo caso
+boys_2015 &lt;- filter(babynames, year == 2015, sex == "M")
+boys_2015 &lt;- select(boys_2015, name, n)
+boys_2015 &lt;- arrange(boys_2015, desc(n))
+boys_2015
+```
+
+---
+
+class:  inverse
+
+# Práctica 🙌
+## Rta
+
+
+```r
+babynames %&gt;% 
+  filter(year == 2015, sex == "M") %&gt;% 
+  select(name, n) %&gt;% 
+  arrange(desc(n))
+```
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
