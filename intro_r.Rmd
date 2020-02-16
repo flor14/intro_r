@@ -111,6 +111,7 @@ knitr::include_graphics("2_graf.png")
 
 .footnote[http://mclibre.org/consultar/python/otros/lenguajes-programacion.html
 ]
+
 ---
 
 class: center, middle
@@ -139,23 +140,23 @@ knitr::include_graphics("3_graf.png")
 ---
 
 class: center, middle, inverse
-# La programación nos permite <span style="color:blue">automatizar</span> tareas
+# La programación nos permite <span style="color:#53edc9">automatizar</span> tareas
 
 ---
 
 class: center, middle, inverse
-## Nos permite manejar <span style="color:blue">bases de datos más grandes</span>. 
+## Nos permite manejar <span style="color:#53edc9">bases de datos más grandes</span>. 
 
-## Los <span style="color:blue">paquetes</span> permiten explorar varias funcionalidades de forma relativamente sencilla.
+## Los <span style="color:#53edc9">paquetes</span> permiten explorar varias funcionalidades de forma relativamente sencilla.
 
 ---
 
 class: center, middle, inverse
 
-## <span style="color:blue">Múltiples formas de comunicar resultados</span>: 
+## <span style="color:#53edc9">Múltiples formas de comunicar resultados</span>: 
 ### con R podes crear reportes en distintos formatos, paginas web, mapas, gráficos, libros, posters, presentaciones, etc...
 
-## Es software <span style="color:blue">libre</span> 🕊️
+## Es software <span style="color:#53edc9">libre</span> 🕊️
 
 ---
 class: center, middle
@@ -222,7 +223,7 @@ knitr::include_graphics("10_r.png")
 class: center, middle, inverse
 
 
-# R y <span style="color:blue">RStudio IDE</span>
+# R y <span style="color:#53edc9">RStudio IDE</span>
 
 ---
 
@@ -243,9 +244,7 @@ class: center, middle, inverse
 # Paquetes 📦
 
 ```{r 14_paq, echo=FALSE, out.width = "800px", fig.align = "center"}
-
 knitr::include_graphics("14_paq.png")
-
 ```
 
 ---
@@ -253,9 +252,7 @@ knitr::include_graphics("14_paq.png")
 # Funciones
 
 ```{r funciones, echo=FALSE, out.width = "800px", fig.align = "center"}
-
 knitr::include_graphics("funciones.png")
-
 ```
 
 
@@ -265,9 +262,7 @@ knitr::include_graphics("funciones.png")
 # ¿Cuál es la diferencia entre un paquete y una libreria?
 
 ```{r 15_paq, echo=FALSE, out.width = "800px", fig.align = "center"}
-
 knitr::include_graphics("15_paquete.png")
-
 ```
 
 
@@ -276,9 +271,7 @@ knitr::include_graphics("15_paquete.png")
 # ¿Cuál es la diferencia entre un paquete y una libreria?
 
 ```{r 16_paq, echo=FALSE, out.width = "800px", fig.align = "center"}
-
 knitr::include_graphics("16_lib.png")
-
 ```
 
 
@@ -299,17 +292,13 @@ background-size: contain
 # Repositorios ☁️
 
 ```{r 19_repo, echo=FALSE, out.width = "800px", fig.align = "center"}
-
 knitr::include_graphics("19_repo.png")
-
 ```
 
 ---
 
 ```{r 20_dede, echo=FALSE, out.width = "800px", fig.align = "center"}
-
 knitr::include_graphics("20_dede.png")
-
 ```
 
 ---
@@ -339,22 +328,17 @@ class: center, middle, inverse
 # Mensajes en R
 
 ### <span style="color:red">Errores</span> 
-  Aparecerá  “Error in…” y tratará de explicar qué fue lo que salió mal. 
   Generalmente cuando hay un error, el código no se ejecutará. 
 
 ### <span style="color:yellow">Advertencias</span>
-  Aparecerá <span style="color:red">"Warning"</span> y tratará de explicar por qué hay una advertencia.
   En general, el código seguirá funcionando, pero hay algo a revisar o estar atentos. 
 
 ### <span style="color:green">Mensajes</span>
-  Cuando el texto en rojo no comienza con "Error in" o «Warning mensaje amistoso. 
   Son mensajes de diagnóstico útiles y no impiden que el código funcione.
 
 
-```{r semaforo, echo=FALSE, out.width = "300px", fig.align = "center"}
-
+```{r semaforo, echo=FALSE, out.width = "100px", fig.align = "center"}
 knitr::include_graphics("semaforo.jpg")
-
 ```
 
 
@@ -383,9 +367,7 @@ background-size: contain
 class: center, middle
 
 ```{r 28_tw, echo=FALSE, out.width = "800px", fig.align = "center"}
-
 knitr::include_graphics("28_twitter.png")
-
 ```
 
 ---
@@ -399,9 +381,7 @@ class: center, middle
 ### R-Ladies
 
 ```{r rladies, echo=FALSE, out.width = "200px", fig.align = "center"}
-
 knitr::include_graphics("rladiesrcia.jpg")
-
 ```
 
 [Twitter](https://twitter.com/rladies_rciacte?lang=es)
@@ -413,9 +393,7 @@ knitr::include_graphics("rladiesrcia.jpg")
 ### R en el NEA
 
 ```{r renelnea, echo=FALSE, out.width = "200px", fig.align = "center"}
-
 knitr::include_graphics("renelnea.png")
-
 ```
 
 [Twitter](https://twitter.com/NeaRenel)
@@ -431,9 +409,7 @@ class: center, middle
 # Avanza muy rápido 📈
 
 ```{r 29, echo=FALSE, out.width = "400px", fig.align = "center"}
-
 knitr::include_graphics("cran.png")
-
 ```
 
 ---
@@ -443,9 +419,7 @@ class: center, middle
 # La comunidad de R es twittera 🐦
 
 ```{r 30, echo=FALSE, out.width = "400px", fig.align = "center"}
-
 knitr::include_graphics("twit.png")
-
 ```
 
 ---
@@ -503,17 +477,13 @@ background-size: contain
 
 # Tidyverse 🌌
 
-<img src="tidyverse.png" width="10%" align="right" />
-
 ---
-
 
 background-image: url(38_ti.png)
 background-size: contain
 
-<img src="tidyverse.png" width="10%" align="right" />
-
 # Tidyverse 🌌
+
 ---
 <img src="tidyverse.png" width="10%" align="right" />
 
@@ -522,9 +492,7 @@ background-size: contain
 Las funciones de los paquetes del Tidyverse y los de R base pueden coincidir
 
 ```{r 39ti, echo=FALSE, out.width = "500px", fig.align = "center"}
-
 knitr::include_graphics("39_ti.png")
-
 ```
 
 
@@ -532,7 +500,7 @@ knitr::include_graphics("39_ti.png")
 
 class: center, middle, inverse
 
-# Los paquetes del tidyverse se escriben diferente, tienen una <span style="color:blue">sintaxis</span> particular
+# Los paquetes del tidyverse se escriben diferente, tienen una <span style="color:#53edc9">sintaxis</span> particular
 
 ---
 
@@ -573,9 +541,7 @@ background-size: contain
 # Vector
 
 ```{r 45, echo=FALSE, out.width = "800px", fig.align = "center"}
-
 knitr::include_graphics("45_vector.png")
-
 ```
 
 ---
@@ -583,31 +549,41 @@ knitr::include_graphics("45_vector.png")
 # dataframe
 
 ```{r 46, echo=FALSE, out.width = "800px", fig.align = "center"}
-
 knitr::include_graphics("46_df.png")
-
 ```
+
+.footnote[*Analogía de Jenny Bryan* - https://speakerdeck.com/jennybc/data-rectangling]
+
+.footnote[http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html
+]
+
 
 ---
 
 # dataframe
 
 ```{r 47, echo=FALSE, out.width = "800px", fig.align = "center"}
-
 knitr::include_graphics("47_df.png")
+```
 
+
+class: center, middle
+
+# Importar archivos desde Excel 📎
+
+```{r 48, echo=FALSE, out.width = "800px", fig.align = "center"}
+knitr::include_graphics("47_2_imp.png")
 ```
 
 ---
 
 class: center, middle
 
-# Importar archivos desde Excel 📎
+# Formas de importar archivos
 
-```{r 48, echo=FALSE, out.width = "600px", fig.align = "center"}
 
+```{r 482, echo=FALSE, out.width = "600px", fig.align = "center"}
 knitr::include_graphics("48_readr.png")
-
 ```
 
 ---
@@ -617,9 +593,7 @@ class: center, middle
 # Otros paquetes 📦
 
 ```{r 49, echo=FALSE, out.width = "600px", fig.align = "center"}
-
 knitr::include_graphics("49_dt.png")
-
 ```
 
 
@@ -638,6 +612,8 @@ class: center, middle, inverse
 
 ---
 
+class:  inverse, center, middle
+
 # `r emo::ji("raising_hand")` ¿Preguntas?
 
 
@@ -650,10 +626,8 @@ class:  inverse
 
 - Generen la carpeta donde van a realizar las actividades del curso
 - Inicien un proyecto dentro del dataset
-- Instalar tidyverse, datos, tidymodels, gapminder, ggally
-- Importar un dataset de excel
+- Instalar `tidyverse`, `datos`, `tidymodels`, `gapminder`, `ggally`
+- Importar un dataset desde excel
 - Pipes
-
-
 
 
